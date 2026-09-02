@@ -31,7 +31,6 @@ var Le=Object.defineProperty;var qe=(d,t,e)=>t in d?Le(d,t,{enumerable:!0,config
               data-helix-card="${c}" style="--station-distance:${a-c};opacity:${h?1:0}"
               aria-hidden="${String(!h)}" ${h?"":"inert"}>
               <div class="helix-card-number"><span>${u}</span><small>/ 12</small></div>
-              ${l.title!==l.shortTitle?`<p class="helix-card-category">${l.title}</p>`:""}
               <h1${g?` class="helix-card-title-fixed" aria-label="${l.shortTitle}"`:""}>${g?g.map(v=>`<span aria-hidden="true">${v}</span>`).join(""):l.shortTitle}</h1>
               <p class="helix-card-description">${l.description}</p>
               ${l.status==="live"?`<a class="helix-module-link" href="#/${l.slug}" data-open-station="${l.slug}"><span>Interaktív modul</span><strong>Megnyitás</strong><b aria-hidden="true">↗</b></a>
